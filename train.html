@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Train Timetable</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Train Times</h1>
+      <p class="text-center">Schedule of trains </p>
+    </div>
+    <div class="row">
+
+    <!-- Most Recent Member Panel -->
+    <div class="col-12">
+        <div class="panel panel-default">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr class = "bg-primary">
+                        <th>Train</th>
+                        <th>Arrival</th>
+                        <th>Departure</th>
+                        <th>Time Remaining</th>
+                        <th>Current Time</th>
+                        <th>Train number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+            <!-- <div class="panel-heading">
+            <h3 class="panel-title">Most Recent Member</h3>
+            </div>
+            <div class="panel-body" id="recent-member">
+            <h2 id="name-display">Jimmy John</h2>
+            <h4 id="email-display">Email: jimmy@john.edu</h4>
+            <h4 id="age-display">Age: 27</h4>
+            <p id="comment-display">I'm signing up, because I want to spread sandwiches to the world.</p>
+            </div> -->
+        </div>
+    </div>
+
+      <!-- Sign-Up Panel-->
+      <div class="col-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Train</h3>
+          </div>
+          <div class="panel-body">
+
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group">
+                <label for="train-input">Train</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="arrival-input">Arrival</label>
+                <input class="form-control" id="role-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="departure-input">Departure</label>
+                <input class="form-control" id="date-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="remaining-input">Time Remaining</label>
+                <input class="form-control" id="rate-input" type="text"></input>
+              </div>
+              <div class="form-group">
+                <label for="current-input">Current Time</label>
+                <input class="form-control" id="rate-input" type="text"></input>
+              </div>
+              <div class="form-group">
+                <label for="number-input">Train Number</label>
+                <input class="form-control" id="rate-input" type="text"></input>
+              </div>
+              <button class="btn btn-default" id="addtrainbutton" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- LINK TO FIREBASE GOES HERE -->
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+  <script src="train.js" type = "text"></script>
+</body>
+
+</html>
