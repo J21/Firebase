@@ -98,11 +98,16 @@ $(document).ready(function() {
 	console.log("Errors handled: " + errorObject.code)
 });
 
-//This function removes the button from the table
+//This function removes the train from the table
 $("body").on("click", ".remove-train", function(){
      $(this).closest ('tr').remove();
      getKey = $(this).parent().parent().attr('id');
-     dataRef.child(getKey).remove();
+     let ref = firebase.database().ref('images');
+     ref.orderByChild('id_logement').equalTo(getKey).once('value', snapshot => {
+     let updates = {};
+     snapshot.forEach(child => updates[child.key] = null);
+     ref.update(updates);
+     });
 });
 
 }); // Closes jQuery wrapper
