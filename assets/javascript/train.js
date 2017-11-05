@@ -98,7 +98,7 @@ $(document).ready(function() {
 	console.log("Errors handled: " + errorObject.code)
 });
 
-//This function removes the train from the table
+//This function removes the train from the table---NOTE:does not fully work yet!
 $("body").on("click", ".remove-train", function(){
      $(this).closest ('tr').remove();
      getKey = $(this).parent().parent().attr('id');
